@@ -1,9 +1,9 @@
 Package: dta
 Type: Package
-Title: Simple Data Management and Manipulation
+Title: Efficient Data Management and Manipulation
 Version: 0.1.0
 Authors@R: 
-    person("John", "Indika", , "rstemlab@stemxresearch.com",
+    person("John", "Indika", , "dta@stemxresearch.com",
     role = c("aut", "cre"))
 Maintainer: John Indika <rdta@stemxresearch.com>
 Description: This package provides simple and efficient tools for data
