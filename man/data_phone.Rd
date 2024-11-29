@@ -8,13 +8,13 @@
 A tibble with 15 rows and 6 variables:
 \describe{
 \item{id}{\code{numeric}: Unique identifier for each review.}
-\item{phone_type}{\code{factor}: The phone model (OnePlus, Sumsung,
+\item{phone_type}{\code{character}: The phone model (OnePlus, Sumsung,
 Google, Apple).}
-\item{ease_of_use}{\code{factor}: Rating for ease of use.}
-\item{battery_life}{\code{factor}: Rating for battery life.}
-\item{camera_quality}{\code{factor}: Rating for camera quality.}
-\item{value_for_money}{\code{factor}: Rating for value for money.}
-\item{design_and_appearance}{\code{factor}: Rating for design and appearance.}
+\item{ease_of_use}{\code{character}: Rating for ease of use.}
+\item{battery_life}{\code{character}: Rating for battery life.}
+\item{camera_quality}{\code{character}: Rating for camera quality.}
+\item{value_for_money}{\code{character}: Rating for value for money.}
+\item{design_and_appearance}{\code{character}: Rating for design and appearance.}
 }
 }
 \source{
