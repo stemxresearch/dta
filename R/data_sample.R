@@ -37,7 +37,7 @@
 #' data("data_sample")
 #'
 #' @examples
-#' dta_gt(data_sample)
+#' dta_gt(head(data_sample))
 #'
 #' @source Simulated data for demonstration purposes.
 "data_sample"
