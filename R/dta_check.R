@@ -104,7 +104,7 @@
 # =============================================================================
 
 dta_check <- function() {
-  check_namespace(check)
+  check_namespace(libname = "check")
 }
 
 #' @noRd

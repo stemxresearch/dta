@@ -1,0 +1,21 @@
+url: https://stemxresearch.github.io/dta
+site:
+  title: "The dta Package"
+  description: "A comprehensive guide to using the dta Package."
+  url: "https://stemxresearch.github.io/dta"
+template:
+  bootstrap: 5
+  light-switch: true
+  bslib:
+    math-rendering: katex
+navbar:
+  bg: primary
+  structure:
+    left:  [intro, reference, articles, tutorials, news]
+    right: [search, github, lightswitch]
+footer:
+  structure:
+    left: pkgdown
+    right: [developed_by, legal]
+  components:
+    legal: Provided without **any warranty**.

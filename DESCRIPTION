@@ -11,6 +11,8 @@ Description: This package provides simple and efficient tools for data
   format datasets using popular data-handling methods. It aims to simplify
   common data-wrangling tasks.
 License: MIT + file LICENSE
+URL: https://stemxresearch.github.io/dta, https://github.com/stemxresearch/dta
+BugReports: https://github.com/stemxresearch/dta/issues
 Encoding: UTF-8
 LazyData: true
 Depends: 
@@ -32,3 +34,7 @@ Imports:
     tibble,
     tidyr
 Roxygen: list(markdown = TRUE)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
