@@ -31,7 +31,7 @@
 #' data("data_cancer")
 #'
 #' @examples
-#' head(data_cancer)
+#' dta_gt(data_cancer)
 #'
 #' @source Simulated data for demonstration purposes.
 "data_cancer"

@@ -15,7 +15,7 @@
 #' data("data_bmi")
 #'
 #' @examples
-#' head(data_bmi)
+#' dta_gt(data_bmi)
 #'
 #' @source Simulated data for demonstration purposes.
 "data_bmi"
