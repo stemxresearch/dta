@@ -18,6 +18,9 @@ include:
 
 Among others.
 
+If you are new to `dta`, the best place to start is the [dta package
+website](https://stemxresearch.github.io/dta).
+
 ## Installation
 
 ``` r
@@ -38,13 +41,13 @@ library(dplyr)
 
 Click the **Get Started** link on the top menu or follow the link
 [Getting
-started](https://stemxresearch.github.io/dta/articles/dta.html) for
+started](https://stemxresearch.github.io/dta/docs/articles/dta.html) for
 a quick tutorial on the `dta` library.
 
 ## Documentation
 
-The **Reference** link on the top menu or [this
-page](https://stemxresearch.github.io/dta/reference/index.html)
+The **Reference** menu on the top menu or [this
+page](https://stemxresearch.github.io/dta/docs/articles/dta.html)
 provides a list of all the functions available in the `dta` package with
 help documentation including syntax and examples.
 
