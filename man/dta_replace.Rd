@@ -45,8 +45,8 @@ dta_gtable(head(data_misspelled))
 data("dict_misspelled")
 dta_gtable(dict_misspelled)
 
-# Correct the misspelled entries in \code{dat} using the
-# \code{dict} dictionary
+# Correct the misspelled entries in `dat` using the
+# `dict` dictionary
 
 result <- dta_replace(
   dat = data_misspelled, 
