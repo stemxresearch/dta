@@ -22,7 +22,7 @@ A dataset containing information about individuals, including their ID and
 calculated Body Mass Index (BMI).
 }
 \examples{
-dta_gt(data_bmicat)
+dta_gtable(data_bmicat)
 
 }
 \keyword{datasets}

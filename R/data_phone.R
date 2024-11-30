@@ -20,7 +20,7 @@
 #' data("data_phone")
 #'
 #' @examples
-#' dta_gt(data_phone)
+#' dta_gtable(data_phone)
 #'
 #' @source Simulated data for demonstration purposes.
 "data_phone"

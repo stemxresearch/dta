@@ -25,7 +25,7 @@
 #'
 #' @examples
 #' data("data_cancer")
-#' dta_gt(data_cancer)
+#' dta_gtable(data_cancer)
 #' 
 #' # Transpose the data frame and use column 1 as variable
 #' # names in the transposed data frame.
@@ -33,7 +33,7 @@
 #' df <- dta_transpose(
 #'   dat = data_cancer, .column_to_use_as_variables = 1
 #' )
-#' dta_gt(df)
+#' dta_gtable(df)
 #' 
 #' # You could also specify the variable name
 #' 
@@ -41,17 +41,17 @@
 #'   dat = data_cancer,
 #'   .column_to_use_as_variables = cancer_type
 #' )
-#' dta_gt(df2)
+#' dta_gtable(df2)
 #' 
 #' # Use default column names
 #' 
 #' data("data_cancer2") # does not have cancer types column
-#' dta_gt(data_cancer2)
+#' dta_gtable(data_cancer2)
 #' 
 #' # Transpose and use default column names "V1", "V2", ...
 #' 
 #' df3 <- dta_transpose(data_cancer2)
-#' dta_gt(df3)
+#' dta_gtable(df3)
 #' 
 #' @export
 dta_transpose <- function(dat, .column_to_use_as_variables = NULL) {

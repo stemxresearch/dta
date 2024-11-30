@@ -57,7 +57,7 @@ result <- dta_freq_mrq(
   value = "Yes",
   name = "Programming proficiency"
 )
-dta_gt(result)
+dta_gtable(result)
 
 # Remove the percentage symbol
 
@@ -68,7 +68,7 @@ result2 <- dta_freq_mrq(
   name = "Programming proficiency",
   add_percent_symbol = FALSE
 )
-dta_gt(result2)
+dta_gtable(result2)
 
 # An example with TRUE / FALSE. First generate multiple
 # response variables with TRUE / FALSE values
@@ -79,7 +79,7 @@ dat <- dta_mrq(
   delimeter = ", ",
   prefix = "gad_"
 )
-dta_gt(dat[1:10, (ncol(dat) - 6):ncol(dat)])
+dta_gtable(dat[1:10, (ncol(dat) - 6):ncol(dat)])
 
 result3 <- dta_freq_mrq(
   dat = dat,
@@ -87,7 +87,7 @@ result3 <- dta_freq_mrq(
   value = TRUE,
   name = "Programming proficiency"
 )
-dta_gt(result3)
+dta_gtable(result3)
 
 # An example with numeric codes 0 / 1
 
@@ -98,7 +98,7 @@ dat2 <- dta_mrq(
   prefix = "gad_",
   as_numeric = TRUE
 )
-dta_gt(dat2[1:10, (ncol(dat2) - 6):ncol(dat2)])
+dta_gtable(dat2[1:10, (ncol(dat2) - 6):ncol(dat2)])
 
 result4 <- dta_freq_mrq(
   dat = dat2,
@@ -106,6 +106,6 @@ result4 <- dta_freq_mrq(
   value = 1,
   name = "Programming proficiency"
 )
-dta_gt(result4)
+dta_gtable(result4)
 
 }

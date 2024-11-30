@@ -13,7 +13,7 @@
 #' data("data_bmicat")
 #'
 #' @examples
-#' dta_gt(data_bmicat)
+#' dta_gtable(data_bmicat)
 #'
 #' @source Simulated data for demonstration purposes.
 "data_bmicat"

@@ -15,7 +15,7 @@
 #' data("dict_misspelled")
 #'
 #' @examples
-#' dta_gt(dict_misspelled)
+#' dta_gtable(dict_misspelled)
 #'
 #' @source Simulated data for demonstration purposes.
 "dict_misspelled"

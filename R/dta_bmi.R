@@ -25,7 +25,7 @@
 #'
 #' @examples
 #' data("data_bmi")
-#' dta_gt(data_bmi)
+#' dta_gtable(data_bmi)
 #'
 #' # Calculate BMI from the columns `weight` and `height`
 #'
@@ -34,7 +34,7 @@
 #'   .weight = weight,
 #'   .height = height
 #' )
-#' dta_gt(df)
+#' dta_gtable(df)
 #'
 #' # Calculate BMI from the columns `weight` and `height`
 #' # to 2 decimal points and assign the values to the new
@@ -47,7 +47,7 @@
 #'   name = body_mass_index,
 #'   digits = 2
 #' )
-#' dta_gt(df2)
+#' dta_gtable(df2)
 #'
 #' @export
 dta_bmi <- function(
@@ -120,7 +120,7 @@ dta_bmi <- function(
 #'
 #' @examples
 #' data("data_bmicat")
-#' dta_gt(data_bmicat)
+#' dta_gtable(data_bmicat)
 #'
 #' # Categorize `bmi` into the standard BMI categories
 #'
@@ -131,7 +131,7 @@ dta_bmi <- function(
 #'   is_extended = FALSE,
 #'   as_factor = TRUE
 #' )
-#' dta_gt(df2)
+#' dta_gtable(df2)
 #'
 #' # Categorize `bmi` into the extended BMI categories
 #'
@@ -142,7 +142,7 @@ dta_bmi <- function(
 #'   is_extended = TRUE,
 #'   as_factor = TRUE
 #' )
-#' dta_gt(df2)
+#' dta_gtable(df2)
 #'
 #' # Categorize `bmi` into the standard BMI categories and
 #' # convert to numeric
@@ -155,7 +155,7 @@ dta_bmi <- function(
 #'   as_factor = TRUE,
 #'   as_numeric = TRUE
 #' )
-#' dta_gt(df3)
+#' dta_gtable(df3)
 #'
 #' @seealso \code{\link{dta_bmi}}, \code{\link[dplyr]{case_match}}, \code{\link[dplyr]{case_when}}
 #'

@@ -24,7 +24,7 @@ A dataset containing information about individuals, including their ID, age,
 height, and weight.
 }
 \examples{
-dta_gt(data_bmi)
+dta_gtable(data_bmi)
 
 }
 \keyword{datasets}

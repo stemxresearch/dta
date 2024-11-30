@@ -35,7 +35,7 @@ This dataset contains information on individuals, including demographics,
 education, skills in various tools, and socioeconomic status.
 }
 \examples{
-dta_gt(data_misspelled)
+dta_gtable(data_misspelled)
 
 }
 \keyword{datasets}

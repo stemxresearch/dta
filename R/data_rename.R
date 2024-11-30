@@ -26,7 +26,7 @@
 #' data("data_rename")
 #'
 #' @examples
-#' dta_gt(data_rename)
+#' dta_gtable(data_rename)
 #'
 #' @source Simulated data for demonstration purposes.
 "data_rename"

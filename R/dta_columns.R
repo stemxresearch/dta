@@ -15,7 +15,7 @@
 #'
 #' @examples
 #' data(mtcars)
-#' dta_gt(head(mtcars))
+#' dta_gtable(head(mtcars))
 #' 
 #' dta_columns(mtcars, .columns = starts_with("c"))
 #' 

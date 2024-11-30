@@ -26,7 +26,7 @@
 #'
 #' @examples
 #' data("data_bmi")
-#' dta_gt(data_bmi)
+#' dta_gtable(data_bmi)
 #'
 #' # Rename the columns `age` and `weight` to `age_in_years`
 #' # and `weight_in_kgs`
@@ -37,7 +37,7 @@
 #'   .newnames = c("age_in_years", "weight_in_kgs")
 #')
 #'
-#' dta_gt(result)
+#' dta_gtable(result)
 #'
 #' # Rename all columns to `unique_id`, `age_in_years`,
 #' # `height_in_meters` and `weight_in_kgs`. In this case,
@@ -56,20 +56,20 @@
 #'   .newnames = new_names
 #')
 #'
-#' dta_gt(result2)
+#' dta_gtable(result2)
 #'
 #' # Rename from a dictionary - Begin by loading the dataset
 #' # with columns to be renamed.
 #' 
 #' data("data_rename")
-#' dta_gt(head(data_rename))
+#' dta_gtable(head(data_rename))
 #' 
 #' # The dictionary with the columns `oldnames` and
 #' # `newnames` representing the old and new variable names
 #' # respectively
 #' 
 #' data("dict_rename")
-#' dta_gt(dict_rename)
+#' dta_gtable(dict_rename)
 #' 
 #' # Perform the renaming
 #' 
@@ -80,7 +80,7 @@
 #'   .newnames = new
 #')
 #'
-#' dta_gt(result3)
+#' dta_gtable(result3)
 #'
 #' @export
 dta_rename <- function(dat, dict = NULL, .oldnames, .newnames) {

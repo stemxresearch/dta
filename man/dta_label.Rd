@@ -61,10 +61,10 @@ result <- dta_label(
 # Using a dictionary data frame
 
 data("data_bmi")
-dta_gt(head(data_bmi))
+dta_gtable(head(data_bmi))
 
 data("dict_labels")
-dta_gt(dict_labels)
+dta_gtable(dict_labels)
 
 result2 <- dta_label(
   dat = data_bmi,

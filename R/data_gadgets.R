@@ -13,7 +13,7 @@
 #' data("data_gadgets")
 #'
 #' @examples
-#' dta_gt(data_gadgets)
+#' dta_gtable(data_gadgets)
 #' 
 #' @source Simulated data for demonstration purposes.
 "data_gadgets"

@@ -46,7 +46,7 @@ level, employment status, socioeconomic status, language, technology
 ownership, and skills in various tools.
 }
 \examples{
-dta_gt(head(data_sample))
+dta_gtable(head(data_sample))
 
 }
 \keyword{datasets}

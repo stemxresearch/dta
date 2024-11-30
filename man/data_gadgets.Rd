@@ -22,7 +22,7 @@ A dataset containing information about the gadgets owned by individuals.
 Each entry lists one or more gadgets separated by commas.
 }
 \examples{
-dta_gt(data_gadgets)
+dta_gtable(data_gadgets)
 
 }
 \keyword{datasets}

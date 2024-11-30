@@ -29,7 +29,7 @@ on ease of use, battery life, camera quality, value for money, and design
 and appearance.
 }
 \examples{
-dta_gt(data_phone)
+dta_gtable(data_phone)
 
 }
 \keyword{datasets}

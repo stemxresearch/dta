@@ -12,7 +12,7 @@
 #' data("dict_labels")
 #'
 #' @examples
-#' dta_gt(dict_labels)
+#' dta_gtable(dict_labels)
 #'
 #' @source Simulated data for demonstration purposes.
 "dict_labels"

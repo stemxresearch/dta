@@ -26,10 +26,10 @@
 #' # Example data with misspelled characters / strings
 #' 
 #' #' data("data_misspelled")
-#' dta_gt(head(data_misspelled))
+#' dta_gtable(head(data_misspelled))
 #' 
 #' data("dict_misspelled")
-#' dta_gt(dict_misspelled)
+#' dta_gtable(dict_misspelled)
 #'
 #' # Correct the misspelled entries in \code{dat} using the
 #' # \code{dict} dictionary
@@ -41,7 +41,7 @@
 #'   .wrong = old, 
 #'   .correct = new
 #' )
-#' dta_gt(head(result))
+#' dta_gtable(head(result))
 #'
 #' @export
 dta_replace <- function(dat, dict, .name, .wrong, .correct) {

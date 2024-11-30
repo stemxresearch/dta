@@ -40,7 +40,7 @@ after being diagonized with level IV cancer. The cancer types are organized
 by the rows. We will use this dataset to demonstrate transposing datasets.
 }
 \examples{
-dta_gt(data_cancer)
+dta_gtable(data_cancer)
 
 }
 \keyword{datasets}

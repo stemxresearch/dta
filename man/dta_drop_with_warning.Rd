@@ -25,7 +25,7 @@ a warning is issued indicating the number of rows removed.
 }
 \examples{
 df <- data.frame(x = c(1, 2, NA, 4), y = c(NA, 5, 6, 7))
-dta_gt(df)
+dta_gtable(df)
 
 # Drop rows with NA values in any column and issue a warning
 

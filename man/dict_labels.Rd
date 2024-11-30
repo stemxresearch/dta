@@ -21,7 +21,7 @@ data("dict_labels")
 A dictionary containing the names of variables and their descriptive labels.
 }
 \examples{
-dta_gt(dict_labels)
+dta_gtable(dict_labels)
 
 }
 \keyword{datasets}

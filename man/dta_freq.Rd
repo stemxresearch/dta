@@ -49,7 +49,7 @@ and customizing the output.
 
 data("data_sample")
 tab <- dta_freq(dat = data_sample, .column = region)
-dta_gt(tab)
+dta_gtable(tab)
 
 # Frequency distribution with sorting in increasing
 # order of frequency
@@ -60,7 +60,7 @@ tab2 <- dta_freq(
   is_sorted = TRUE,
   is_decreasing = FALSE
 )
-dta_gt(tab2)
+dta_gtable(tab2)
 
 # Frequency distribution with sorting in decreasing
 # order of frequency
@@ -71,7 +71,7 @@ tab3 <- dta_freq(
   is_sorted = TRUE,
   is_decreasing = TRUE
 )
-dta_gt(tab3)
+dta_gtable(tab3)
 
 # Remove the percentage symbol
 
@@ -82,6 +82,6 @@ tab3 <- dta_freq(
   is_decreasing = TRUE,
   add_percent_symbol = FALSE
 )
-dta_gt(tab3)
+dta_gtable(tab3)
 
 }

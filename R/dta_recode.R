@@ -28,7 +28,7 @@
 #' glimpse(data_sample) # look at the data type column
 #' 
 #' data("dict_recode")
-#' dta_gt(head(dict_recode, n = 10))
+#' dta_gtable(head(dict_recode, n = 10))
 #' 
 #' # The default nature of `dta_recode()` is to drop the
 #' # labels if the values are not sequential or do not

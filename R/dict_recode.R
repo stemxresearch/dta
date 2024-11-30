@@ -17,7 +17,7 @@
 #' data("dict_recode")
 #'
 #' @examples
-#' dta_gt(dict_recode)
+#' dta_gtable(dict_recode)
 #'
 #' @source Simulated data for demonstration purposes.
 "dict_recode"

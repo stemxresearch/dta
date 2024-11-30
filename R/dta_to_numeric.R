@@ -27,13 +27,13 @@
 #'   b = c("A", "B", "C"),
 #'   c = c(4, 5, 6)
 #' )
-#' dta_gt(df)
+#' dta_gtable(df)
 #' str(df)
 #'
 #' # Convert numeric strings to numeric columns
 #'
 #' df <- dta_to_numeric(df)
-#' dta_gt(df)
+#' dta_gtable(df)
 #' str(df)
 #'
 #' @export

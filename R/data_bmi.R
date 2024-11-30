@@ -15,7 +15,7 @@
 #' data("data_bmi")
 #'
 #' @examples
-#' dta_gt(data_bmi)
+#' dta_gtable(data_bmi)
 #'
 #' @source Simulated data for demonstration purposes.
 "data_bmi"

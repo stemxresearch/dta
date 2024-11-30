@@ -70,7 +70,7 @@ df <- data_sample
 result <- dta_crosstab(
   dat = df, .row = region, .column = age_group
 )
-dta_gt(result)
+dta_gtable(result)
 
 # Calculate column percentages
 
@@ -81,7 +81,7 @@ result2 <- dta_crosstab(
   cells = "col",
   add_totals = "col"
 )
-dta_gt(result2)
+dta_gtable(result2)
 
 # Calculate row percentages
 
@@ -92,7 +92,7 @@ result3 <- dta_crosstab(
   cells = "row",
   add_totals = "row"
 )
-dta_gt(result3)
+dta_gtable(result3)
 
 
 # Remove the percentages symbol
@@ -105,6 +105,6 @@ result4 <- dta_crosstab(
   add_totals = "row",
   add_percent_symbol = FALSE
 )
-dta_gt(result4)
+dta_gtable(result4)
 
 }

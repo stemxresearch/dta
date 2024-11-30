@@ -24,7 +24,7 @@ A dataset containing mappings of old values to new values for certain
 specified variables in a dataset.
 }
 \examples{
-dta_gt(dict_misspelled)
+dta_gtable(dict_misspelled)
 
 }
 \keyword{datasets}

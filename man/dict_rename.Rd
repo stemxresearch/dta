@@ -23,7 +23,7 @@ A dictionary containing mappings of old variable names to their
 corresponding new names.
 }
 \examples{
-dta_gt(dict_rename)
+dta_gtable(dict_rename)
 
 }
 \keyword{datasets}

@@ -66,7 +66,7 @@ If \code{is_extended} is set to \code{TRUE}, the extended BMI categories are:
 }
 \examples{
 data("data_bmicat")
-dta_gt(data_bmicat)
+dta_gtable(data_bmicat)
 
 # Categorize `bmi` into the standard BMI categories
 
@@ -77,7 +77,7 @@ df2 <- dta_bmicat(
   is_extended = FALSE,
   as_factor = TRUE
 )
-dta_gt(df2)
+dta_gtable(df2)
 
 # Categorize `bmi` into the extended BMI categories
 
@@ -88,7 +88,7 @@ df2 <- dta_bmicat(
   is_extended = TRUE,
   as_factor = TRUE
 )
-dta_gt(df2)
+dta_gtable(df2)
 
 # Categorize `bmi` into the standard BMI categories and
 # convert to numeric
@@ -101,7 +101,7 @@ df3 <- dta_bmicat(
   as_factor = TRUE,
   as_numeric = TRUE
 )
-dta_gt(df3)
+dta_gtable(df3)
 
 }
 \seealso{

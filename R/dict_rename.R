@@ -14,7 +14,7 @@
 #' data("dict_rename")
 #'
 #' @examples
-#' dta_gt(dict_rename)
+#' dta_gtable(dict_rename)
 #'
 #' @source Simulated data for variable name mapping.
 "dict_rename"

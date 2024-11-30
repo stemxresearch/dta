@@ -21,17 +21,17 @@
 #'   ),
 #'   age = c(21, 18, 25, 17, 21, 24, 21, 19, 20, 21)
 #' )
-#' dta_gt(df)
+#' dta_gtable(df)
 #' 
 #' # return duplicated rows by all the columns in the data frame
 #' 
 #' result <- dta_duplicates(df)
-#' dta_gt(result)
+#' dta_gtable(result)
 #' 
 #' # return duplicated rows by the column `id`
 #' 
 #' result2 <- dta_duplicates(df, .columns = id)
-#' dta_gt(result2)
+#' dta_gtable(result2)
 #' 
 #' # A second demo data frame
 #' 
@@ -45,12 +45,12 @@
 #'  ),
 #'  age = c(25, 30, 30, 25, 40, 25, 40, 25)
 #' )
-#' dta_gt(df2)
+#' dta_gtable(df2)
 #' 
 #' # return duplicated rows based to the columns 'gender' and 'education'
 #' 
 #' result2 <- dta_duplicates(df2, .columns = c(gender, education))
-#' dta_gt(result2)
+#' dta_gtable(result2)
 #'
 #' @export 
 dta_duplicates <- function(dat, .columns = names(dat)) {

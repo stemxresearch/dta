@@ -37,7 +37,7 @@
 #' @examples
 #' data("data_gadgets")
 #' dat <- data_gadgets
-#' dta_gt(dat)
+#' dta_gtable(dat)
 #' 
 #' # Split `gadgets_owned` column into separate columns.
 #' # The created columns will be logical (i.e. TRUE / FALSE).
@@ -47,7 +47,7 @@
 #'  .column = gadgets_owned,
 #'  delimeter = ", ",
 #'  is_clean_names = TRUE)
-#' dta_gt(df)
+#' dta_gtable(df)
 #' 
 #' # Convert the created columns from logical (TRUE / FALSE)
 #' # columns to numeric.
@@ -59,7 +59,7 @@
 #'  as_numeric = TRUE,
 #'  is_clean_names = TRUE
 #')
-#' dta_gt(df2)
+#' dta_gtable(df2)
 #' 
 #' # You can specify the labels to be used. In the example
 #' # below, the columns will be character with Yes / No.
@@ -71,7 +71,7 @@
 #'  labels = c("Yes", "No"),
 #'  is_clean_names = TRUE,
 #')
-#' dta_gt(df3)
+#' dta_gtable(df3)
 #' 
 #' # Any other labels could be used. For example
 #' # Positive / Negative e.g. in the case of diseases.
@@ -83,7 +83,7 @@
 #'  labels = c("Positive", "Negative"),
 #'  is_clean_names = TRUE,
 #')
-#' dta_gt(df4)
+#' dta_gtable(df4)
 #' 
 #' # Use numeric values and specify a `prefix` for the
 #' # column names.
@@ -96,7 +96,7 @@
 #'  labels = c(1, 2),
 #'  is_clean_names = TRUE
 #')
-#' dta_gt(df5)
+#' dta_gtable(df5)
 #' 
 #' @export
 dta_mrq <- function(

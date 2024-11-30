@@ -35,7 +35,7 @@ their unique identifier, age, height, weight, marital status, education
 level, employment status, and socioeconomic status.
 }
 \examples{
-dta_gt(data_rename)
+dta_gtable(data_rename)
 
 }
 \keyword{datasets}
