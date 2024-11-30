@@ -1,12 +1,13 @@
 ---
-title: "Data management and manipulation"
+title: "Efficient Data Management and Manipulation"
 description: >
-  Learn how to use simple and efficient tools for data management and
-  manipulation, including functions to clean, transform, and format
-  datasets using popular data-handling methods.
+  This package provides simple and efficient tools for data
+  management and manipulation, including functions to clean, transform, and
+  format datasets using popular data-handling methods. It aims to simplify
+  common data-wrangling tasks.
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Data management and manipulation}
+  %\VignetteIndexEntry{Efficient Data Management and Manipulation}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

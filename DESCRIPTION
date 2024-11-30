@@ -5,7 +5,7 @@ Version: 0.1.0
 Authors@R: 
     person("John", "Indika", , "dta@stemxresearch.com",
     role = c("aut", "cre"))
-Maintainer: John Indika <rdta@stemxresearch.com>
+Maintainer: John Indika <dta@stemxresearch.com>
 Description: This package provides simple and efficient tools for data
   management and manipulation, including functions to clean, transform, and
   format datasets using popular data-handling methods. It aims to simplify

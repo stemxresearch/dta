@@ -1,50 +1,47 @@
----
-output: github_document
----
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-options(tibble.print_min = 5, tibble.print_max = 5)
-```
 
 ## Overview
 
-`dta` is a package designed for simple and efficient data wrangling, offering functions to tackle common data manipulation challenges. These include:
+`dta` is a package designed for simple and efficient data wrangling,
+offering functions to tackle common data manipulation challenges. These
+include:
 
--   `dta_bmi()` computes the Body Mass Index (BMI) given weight and height columns in a data frame or tibble.
--   `dta_freq_mrq()` Frequency table for multiple response questions.
--   `dta_mrq()` Split multiple response question column into binary columns.
--   `dta_recode_auto()` Automatically recode categorical variables in a data frame.
--   `dta_recode()` Recode variables in a data frame based on a dictionary.
--   `dta_transpose` Transpose a data frame with specified column as variable names
+- `dta_bmi()` computes the Body Mass Index (BMI) given weight and height
+  columns in a data frame or tibble.
+- `dta_freq_mrq()` Frequency table for multiple response questions.
+- `dta_mrq()` Split multiple response question column into binary
+  columns.
+- `dta_recode_auto()` Automatically recode categorical variables in a
+  data frame.
+- `dta_recode()` Recode variables in a data frame based on a dictionary.
+- `dta_transpose` Transpose a data frame with specified column as
+  variable names
 
 Among others.
 
-If you are new to `dta`, the best place to start is the [dta for data wrangling in R tutorial](https://rpubs.com/stemresearch).
+If you are new to `dta`, the best place to start is the [dta package
+website](https://stemxresearch.github.io/dta).
 
 ## Installation
 
-```{r, eval = FALSE}
+``` r
 install.packages("devtools")
-devtools::install_github("dta")
+devtools::install_github("stemxresearch/dta")
 ```
 
 ## Usage
 
-```{r, message = FALSE}
+``` r
 library(dplyr)
-
 ```
 
 ## Getting help
 
-If you encounter a clear bug, please file an issue with a minimal reproducible example on [GitHub](https://github.com/stemxresearch/dta/issues).
+If you encounter a clear bug, please file an issue with a minimal
+reproducible example on
+[GitHub](https://github.com/stemxresearch/dta/issues).
 
 ## Code of conduct
 
-Please note that this project is released with a [Contributor Code of Conduct](https://www.r-project.org/coc-policy.html). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of
+Conduct](https://www.r-project.org/coc-policy.html). By participating in
+this project you agree to abide by its terms.
