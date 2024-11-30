@@ -1,9 +1,10 @@
 
 ## Overview
 
-`dta` is a package designed for simple and efficient data wrangling,
-offering functions to tackle common data manipulation challenges. These
-include:
+`dta` provides simple and efficient tools for data management and
+manipulation, including functions to clean, transform, and format
+datasets using popular data-handling methods. It aims to simplify common
+data-wrangling tasks. These include:
 
 - `dta_bmi()` computes the Body Mass Index (BMI) given weight and height
   columns in a data frame or tibble.
@@ -14,12 +15,7 @@ include:
   data frame.
 - `dta_recode()` Recode variables in a data frame based on a dictionary.
 - `dta_transpose()` Transpose a data frame with specified column as
-  variable names
-
-Among others.
-
-If you are new to `dta`, the best place to start is the [dta package
-website](https://stemxresearch.github.io/dta).
+  variable names.
 
 ## Installation
 
@@ -34,22 +30,21 @@ To use the `dta` package, you must start by loading it using the
 `library()` function as shown below.
 
 ``` r
-library(dplyr)
+library(dta)
 ```
 
 ## Getting started
 
 Click the **Get Started** link on the top menu or follow the link
-[Getting
-started](https://stemxresearch.github.io/dta/docs/articles/dta.html) for
-a quick tutorial on the `dta` library.
+[Getting started](https://stemxresearch.github.io/dta/articles/dta.html)
+for a quick tutorial on the `dta` library.
 
 ## Documentation
 
 The **Reference** menu on the top menu or [this
-page](https://stemxresearch.github.io/dta/docs/articles/dta.html)
-provides a list of all the functions available in the `dta` package with
-help documentation including syntax and examples.
+page](https://stemxresearch.github.io/dta/reference/dta.html) provides a
+list of all the functions available in the `dta` package with help
+documentation including syntax and examples.
 
 ## Getting help
 
