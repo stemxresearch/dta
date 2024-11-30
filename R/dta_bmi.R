@@ -124,14 +124,14 @@ dta_bmi <- function(
 #'
 #' # Categorize `bmi` into the standard BMI categories
 #'
-#' df2 <- dta_bmicat(
+#' df <- dta_bmicat(
 #'   dat = data_bmicat,
 #'   .bmi = bmi,
 #'   name = bmi_cat,
 #'   is_extended = FALSE,
 #'   as_factor = TRUE
 #' )
-#' dta_gtable(df2)
+#' dta_gtable(df)
 #'
 #' # Categorize `bmi` into the extended BMI categories
 #'

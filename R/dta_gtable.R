@@ -32,7 +32,7 @@ dta_gtable <- function(dat) {
   # Replace NA with empty string within gt syntax
   gtable <- gt::sub_missing(
     gtable,
-    columns = everything(),
+    columns = dplyr::everything(),
     missing_text = ""
   )
 

@@ -45,6 +45,8 @@
 #' result <- dta_label(
 #'   dat, dict = NULL, .names = names, .labels = labels
 #' )
+#' 
+#' dta_gtable(result)
 #'
 #' # Using a dictionary data frame
 #' 

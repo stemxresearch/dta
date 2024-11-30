@@ -25,7 +25,7 @@
 #' @examples
 #' # Example data with misspelled characters / strings
 #' 
-#' #' data("data_misspelled")
+#' data("data_misspelled")
 #' dta_gtable(head(data_misspelled))
 #' 
 #' data("dict_misspelled")
