@@ -15,7 +15,7 @@ navbar:
     right: [search, github, lightswitch]
 footer:
   structure:
-    left: pkgdown
+    left: "STEM Research"
     right: [developed_by, legal]
   components:
     legal: Provided without **any warranty**.
