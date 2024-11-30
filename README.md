@@ -13,13 +13,10 @@ include:
 - `dta_recode_auto()` Automatically recode categorical variables in a
   data frame.
 - `dta_recode()` Recode variables in a data frame based on a dictionary.
-- `dta_transpose` Transpose a data frame with specified column as
+- `dta_transpose()` Transpose a data frame with specified column as
   variable names
 
 Among others.
-
-If you are new to `dta`, the best place to start is the [dta package
-website](https://stemxresearch.github.io/dta).
 
 ## Installation
 
@@ -30,9 +27,26 @@ devtools::install_github("stemxresearch/dta")
 
 ## Usage
 
+To use the `dta` package, you must start by loading it using the
+`library()` function as shown below.
+
 ``` r
 library(dplyr)
 ```
+
+## Getting started
+
+Click the **Get Started** link on the top menu or follow the link
+[Getting
+started](https://stemxresearch.github.io/dta/articles/dta.html) for
+a quick tutorial on the `dta` library.
+
+## Documentation
+
+The **Reference** link on the top menu or [this
+page](https://stemxresearch.github.io/dta/reference/index.html)
+provides a list of all the functions available in the `dta` package with
+help documentation including syntax and examples.
 
 ## Getting help
 

@@ -15,7 +15,9 @@ navbar:
     right: [search, github, lightswitch]
 footer:
   structure:
-    left: "STEM Research"
-    right: [developed_by, legal]
+    left: [developed_by, sepby, legal]
+    right: built_with
   components:
+    developed_by: An R Package Developed by STEM Research
+    sepby: "::"
     legal: Software Development, Data Analytics & AI.
