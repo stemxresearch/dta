@@ -2,9 +2,9 @@
 title: "Efficient Data Management and Manipulation"
 description: >
   This package provides simple and efficient tools for data
-  management and manipulation, including functions to clean, transform, and
-  format datasets using popular data-handling methods. It aims to simplify
-  common data-wrangling tasks.
+  management and manipulation, including functions to clean,
+  transform, and format datasets using popular data-handling
+  methods. It aims to simplify common data-wrangling tasks.
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Efficient Data Management and Manipulation}
@@ -244,10 +244,11 @@ dta_gtable(dat)
 # The created columns will be logical (i.e. TRUE / FALSE).
 
 df <- dta_mrq(
- dat = dat,
- .column = gadgets_owned,
- delimeter = ", ",
- is_clean_names = TRUE)
+  dat = dat,
+  .column = gadgets_owned,
+  delimeter = ", ",
+  is_clean_names = TRUE
+)
 dta_gtable(df)
 ```
 

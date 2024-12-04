@@ -29,6 +29,8 @@ include:
 -   `dta_transpose()` Transpose a data frame with specified column as variable
     names.
 
+Among others. The full list of functions is available on the [documentation]()
+
 ## Installation
 
 ```{r, eval = FALSE}
