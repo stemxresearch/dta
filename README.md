@@ -17,6 +17,9 @@ data-wrangling tasks. These include:
 - `dta_transpose()` Transpose a data frame with specified column as
   variable names.
 
+Among others. The full list of functions is available on the
+[documentation](https://stemxresearch.github.io/dta/reference/index.html)
+
 ## Installation
 
 ``` r
@@ -42,8 +45,8 @@ for a quick tutorial on the `dta` library.
 ## Documentation
 
 The **Reference** menu on the top menu or [this
-page](https://stemxresearch.github.io/dta/reference/dta.html) provides a
-list of all the functions available in the `dta` package with help
+page](https://stemxresearch.github.io/dta/reference/index.html) provides
+a list of all the functions available in the `dta` package with help
 documentation including syntax and examples.
 
 ## Getting help
