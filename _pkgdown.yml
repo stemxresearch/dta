@@ -1,0 +1,23 @@
+url: https://stemxresearch.github.io/dta
+site:
+  title: "The dta Package"
+  description: "A comprehensive guide to using the dta Package."
+  url: "https://stemxresearch.github.io/dta"
+template:
+  bootstrap: 5
+  light-switch: true
+  bslib:
+    math-rendering: katex
+navbar:
+  bg: primary
+  structure:
+    left:  [intro, reference, articles, tutorials, news]
+    right: [search, github, lightswitch]
+footer:
+  structure:
+    left: [developed_by, sepby, legal]
+    right: built_with
+  components:
+    developed_by: An R Package Developed by STEM Research
+    sepby: "::"
+    legal: A Centre of Excellence in Data Analytics & AI.

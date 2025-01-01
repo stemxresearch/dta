@@ -1,0 +1,40 @@
+Package: dta
+Type: Package
+Title: An R Library for Efficient Data Management and Manipulation
+Version: 0.1.0
+Authors@R: 
+    person("John", "Indika", , "dta@stemxresearch.com",
+    role = c("aut", "cre"))
+Maintainer: John Indika <dta@stemxresearch.com>
+Description: This package provides simple and efficient tools for data
+  management and manipulation, including functions to clean, transform, and
+  format datasets using popular data-handling methods. It aims to simplify
+  common data-wrangling tasks.
+License: MIT + file LICENSE
+URL: https://stemxresearch.github.io/dta, https://github.com/stemxresearch/dta
+BugReports: https://github.com/stemxresearch/dta/issues
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.3.2
+Imports: 
+    dplyr,
+    gt,
+    labelled,
+    pracma,
+    purrr,
+    stringr,
+    haven,
+    janitor,
+    matchmaker,
+    readr,
+    readxl,
+    rlang,
+    tibble,
+    tidyr
+Roxygen: list(markdown = TRUE)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

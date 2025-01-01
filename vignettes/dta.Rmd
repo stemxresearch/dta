@@ -1,0 +1,370 @@
+---
+title: "Efficient Data Management and Manipulation"
+description: >
+  This package provides simple and efficient tools for data
+  management and manipulation, including functions to clean,
+  transform, and format datasets using popular data-handling
+  methods. It aims to simplify common data-wrangling tasks.
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Efficient Data Management and Manipulation}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+options(tibble.print_min = 4L, tibble.print_max = 4L)
+```
+
+```{r setup}
+# install.packages(dta) # uncomment if `dta` is not installed
+library(dta)
+```
+
+This document provides a comprehensive guide to the `dta` package, showcasing
+the sample datasets and functions available, along with their usage examples.
+The package is designed for efficient data management, transformation, and
+exploratory data analysis.
+
+## Sample datasets and dictionaries
+
+The package includes several sample datasets and dictionaries. Below are
+descriptions and examples of how to load a few of them.
+
+### Datasets
+
+`data_bmi`: Sample data for body mass index (BMI) calculations.
+
+```{r}
+data("data_bmi")
+dta_gtable(data_bmi)
+```
+
+`data_cancer`: Sample data: Survival of cancer patients in days.
+
+```{r}
+data("data_cancer")
+dta_gtable(data_cancer)
+```
+
+`data_misspelled`: Sample dataset with general information.
+
+```{r}
+data("data_misspelled")
+dta_gtable(data_misspelled)
+```
+
+### Dictionaries
+
+Dictionaries are data values that are applied to update, modify, or standardize
+the values in a specified dataset, enabling consistent and efficient data
+transformation.
+
+`dict_recode`: A dictionary with variable value mappings with labels and ordered
+status.
+
+```{r}
+data("dict_recode")
+dta_gtable(dict_recode)
+```
+
+`dict_misspelled`: A dictionary with variable value mappings with labels and
+ordered status.
+
+```{r}
+data("dict_misspelled")
+dta_gtable(dict_misspelled)
+```
+
+## Functions
+
+### Data management and transformation functions
+
+`dta_columns()`
+
+Retrieve column names from a data frame.
+
+```{r}
+data(mtcars)
+dta_columns(mtcars, .columns = starts_with("c"))
+dta_columns(mtcars, .columns = cyl:wt)
+dta_columns(mtcars, .columns = c(mpg, hp, vs, gear))
+```
+
+`dta_duplicates()`
+
+Find duplicate rows based on specific columns.
+
+```{r}
+df <- data.frame(
+  id = c(14, 20, 12, 32, 14, 23, 15, 12, 30, 14),
+  name = c(
+   "Mary", "Mark", "Faith", "David", "Mary", "Daniel", "Christine",
+   "Johnson", "Elizabeth", "Mary"
+  ),
+  age = c(21, 18, 25, 17, 21, 24, 21, 19, 20, 21)
+)
+
+result <- dta_duplicates(df)
+dta_gtable(result)
+
+result2 <- dta_duplicates(df, .columns = id)
+dta_gtable(result2)
+```
+
+`dta_label()`
+
+Assign variable labels to data frame or tibble columns.
+
+```{r}
+dat <- data.frame(
+  age = c(25, 30, 35, 40),
+  gender = c("Male", "Female", "Female", "Male"),
+  income = c(50000, 60000, 55000, 65000)
+)
+
+names <- c("age", "income")
+labels <- c("Age in years", "Annual income")
+
+result <- dta_label(
+  dat, dict = NULL, .names = names, .labels = labels
+)
+
+dta_gtable(result)
+```
+
+`dta_recode()`
+
+Recode variables in a data frame based on a dictionary.
+
+```{r}
+library(dplyr)
+data("data_sample")
+glimpse(data_sample) # look at the data type column
+data("dict_recode")
+dta_gtable(dict_recode)
+
+result <- dta_recode(
+  dat = data_sample,
+  dict = dict_recode,
+  is_force_sequential = TRUE
+)
+glimpse(result)
+```
+
+`dta_replace()`
+
+Correct misspelled data using a dictionary.
+
+```{r}
+data("data_misspelled")
+dta_gtable(head(data_misspelled))
+
+data("dict_misspelled")
+dta_gtable(dict_misspelled)
+
+# Correct the misspelled entries in `dat` using the
+# `dict` dictionary
+
+result <- dta_replace(
+  dat = data_misspelled, 
+  dict = dict_misspelled, 
+  .name = variable, 
+  .wrong = old, 
+  .correct = new
+)
+dta_gtable(head(result))
+```
+
+`dta_transpose()`
+
+Transpose a data frame with specified column as variable names
+
+```{r}
+data("data_cancer")
+dta_gtable(data_cancer)
+
+df <- dta_transpose(
+  dat = data_cancer, .column_to_use_as_variables = cancer_type
+)
+dta_gtable(df)
+```
+
+### Compute and generate functions
+
+`dta_bmi()`
+
+Calculate body mass index (BMI).
+
+```{r}
+data("data_bmi")
+dta_gtable(data_bmi)
+
+df <- dta_bmi(
+  dat = data_bmi,
+  .weight = weight,
+  .height = height,
+  name = body_mass_index,
+  digits = 2
+)
+dta_gtable(df)
+```
+
+`dta_bmicat()`
+
+Categorize BMI into weight categories.
+
+```{r}
+data("data_bmicat")
+dta_gtable(data_bmicat)
+
+# Categorize `bmi` into the standard BMI categories
+
+df <- dta_bmicat(
+  dat = data_bmicat,
+  .bmi = bmi,
+  name = bmi_cat,
+  is_extended = FALSE,
+  as_factor = TRUE
+)
+dta_gtable(df)
+```
+
+`dta_mrq()`
+
+Split multiple response question column into binary columns.
+
+```{r}
+data("data_gadgets")
+dat <- data_gadgets
+dta_gtable(dat)
+
+# Split `gadgets_owned` column into separate columns.
+# The created columns will be logical (i.e. TRUE / FALSE).
+
+df <- dta_mrq(
+  dat = dat,
+  .column = gadgets_owned,
+  delimeter = ", ",
+  is_clean_names = TRUE
+)
+dta_gtable(df)
+```
+
+### Exploratory data analysis functions
+
+`dta_freq()`
+
+Get frequency distribution of a specific column.
+
+```{r}
+data("data_sample")
+tab <- dta_freq(dat = data_sample, .column = region)
+dta_gtable(tab)
+
+# Remove the percentage symbol
+
+tab2 <- dta_freq(
+  dat = data_sample,
+  .column = region,
+  is_sorted = TRUE,
+  is_decreasing = TRUE,
+  add_percent_symbol = FALSE
+)
+dta_gtable(tab2)
+```
+
+`dta_freq_mrq()`
+
+Frequency table for multiple response questions.
+
+```{r}
+data("data_sample")
+
+# An example with multiple response variables labelled
+# as Yes / No
+
+result <- dta_freq_mrq(
+  dat = data_sample,
+  .columns = r:excel,
+  value = "Yes",
+  name = "Programming proficiency"
+)
+dta_gtable(result)
+
+# Remove the percentage symbol
+
+result2 <- dta_freq_mrq(
+  dat = data_sample,
+  .columns = r:excel,
+  value = "Yes",
+  name = "Programming proficiency",
+  add_percent_symbol = FALSE
+)
+dta_gtable(result2)
+```
+
+`dta_crosstab()`
+
+Generate cross tabulations with optional percentages and totals.
+
+```{r}
+data("data_sample")
+df <- data_sample
+
+# Crosstabulation of frequencies (counts)
+
+result <- dta_crosstab(
+  dat = df, .row = region, .column = age_group
+)
+dta_gtable(result)
+
+# Calculate column percentages
+
+result2 <- dta_crosstab(
+  dat = df, 
+  .row = region,
+  .column = age_group,
+  cells = "col",
+  add_totals = "col"
+)
+dta_gtable(result2)
+
+# Calculate row percentages
+
+result3 <- dta_crosstab(
+  dat = df,
+  .row = region,
+  .column = age_group,
+  cells = "row",
+  add_totals = "row"
+)
+dta_gtable(result3)
+```
+
+### Other utilities
+
+`dta_to_numeric()`
+
+Convert numeric strings in a data frame or tibble to numeric numbers.
+
+```{r}
+# A data frame with numeric character (a), characters (b) and numeric numbers (c)
+
+df <- data.frame(
+  a = c("1", "2", "3"),
+  b = c("A", "B", "C"),
+  c = c(4, 5, 6)
+)
+str(df)
+
+df <- dta_to_numeric(df)
+str(df)
+```
+
+## Conclusion
+
+This document demonstrates the functionality and usage of the `dta` package,
+helping users manage, analyze, and transform their data efficiently. For more
+details, consult the package documentation.
