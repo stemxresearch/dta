@@ -3,9 +3,9 @@ Type: Package
 Title: An R Library for Efficient Data Management and Manipulation
 Version: 0.1.0
 Authors@R: 
-    person("John", "Indika", , "dta@stemxresearch.com",
+    person("STEM", "Research", , "library@stemxresearch.com",
     role = c("aut", "cre"))
-Maintainer: John Indika <dta@stemxresearch.com>
+Maintainer: John Indika <library@stemxresearch.com>
 Description: This package provides simple and efficient tools for data
   management and manipulation, including functions to clean, transform, and
   format datasets using popular data-handling methods. It aims to simplify
