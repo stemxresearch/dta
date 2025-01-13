@@ -3,7 +3,7 @@ Type: Package
 Title: An R Library for Efficient Data Management and Manipulation
 Version: 0.1.0
 Authors@R: 
-    person("STEM", "Research", , "library@stemxresearch.com",
+    person("John", "Indika", , "library@stemxresearch.com",
     role = c("aut", "cre"))
 Maintainer: John Indika <library@stemxresearch.com>
 Description: This package provides simple and efficient tools for data
