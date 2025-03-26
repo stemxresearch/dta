@@ -34,9 +34,7 @@ dta_drop_with_warning <- function(dat, .columns = names(dat)) {
   n <- rows_before - rows_after
   if (n > 0) {
     s <- check_singular_plural(n = n)
-    was_were <- check_singular_plural(
-      n = n, singular = "was", plural = "were"
-    )
+    was_were <- check_singular_plural(n = n, singular = "was", plural = "were")
     warning(n, " row", s, " with missing values (NA) ", was_were, " dropped")
   }
   

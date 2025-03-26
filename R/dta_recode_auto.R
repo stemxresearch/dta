@@ -92,7 +92,6 @@ dta_recode_auto <- function(
   }
 
   as_numeric <- check_logical(as_numeric, default = FALSE)
-
   original_labels <- sapply(dat, labelled::var_label)
 
   dat <- dplyr::mutate(

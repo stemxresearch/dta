@@ -142,7 +142,7 @@ dta_mrq <- function(
     )
   )
   dat <- labelled::set_variable_labels(dat, .labels = original_labels)
-
   dat <- if (is_clean_names) janitor::clean_names(dat) else dat
+
   tibble::as_tibble(dat)
 }

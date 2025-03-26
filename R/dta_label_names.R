@@ -1,3 +1,4 @@
+#' @noRd
 dta_label_names <- function(dat, .columns, is_remove_names = FALSE) {
   dat <- check_dataframe_or_tibble(dat = dat, par_name = "dat")
   columns <- colnames(dplyr::select(dat, {{ .columns }}))
